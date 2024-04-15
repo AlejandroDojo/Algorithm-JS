@@ -29,6 +29,25 @@ function highPass(arr, cutoff) {
     }
     return filteredArr;
 }
+/*
+Dado un arreglo de números, devuelve un recuento de cuántos de los números son mayores que el promedio.
+*/
+function betterThanAverage(arr) {
+    var sum = 0;
+    // calcula el promedio
+    for (let i = 0; i < arr.length; i++) {
+        sum+= arr[i];
+    }
+    sum /= arr.length; // Calculo de promedio. (sumatotalitems / totalitems)
+    var count = 0
+    // cuenmta cuánmtas variables son mayores que el promedio
+    for(let i = 0; i< arr.length; i++) {
+        if (arr[i] > sum) {
+            count++;
+        }
+    }
+    return count;
+}
 
 // CALL
 alwaysHungry([3.14, "comida", "pastel", true, "comida"]);
@@ -37,3 +56,5 @@ alwaysHungry([4, 1, 5, 7, 2]);
 // esto debería mostrar "Tengo hambre"
 var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
 console.log(result); // esperamos de vuelta [6, 8, 10, 9]
+var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
+console.log(result); // esperamos 4 de vuelta
