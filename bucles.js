@@ -48,4 +48,14 @@ function factorial() {
     }
     console.log(product);
 }
+// Call
+console.log("Impares =");
+impar();
+console.log("Multiplos de 3 =");
+multipleOfThree();
+console.log("Secuencia hasta -3.5");
+secuences();
+console.log("Suma del 1 al 100 =");
+sigma();
+console.log("Multiplicacion del 1 al 12 =");
 factorial();
