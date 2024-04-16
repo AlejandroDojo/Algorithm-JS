@@ -59,6 +59,21 @@ function reverse(arr) {
     arr = aux;
     return arr;
 }
+/*
+Escribe una función que devuelva un arreglo de números de Fibonacci hasta una longitud dada n. 
+Los números de Fibonacci se calculan sumando los dos últimos valores de la secuencia.
+Entonces, si el cuarto valor es 2 y el quinto valor es 3 entonces el siguiente valor en la secuencia es 5.
+*/
+
+function fibonacciArray(n) {
+    // [0, 1] son los valores inciales del arreglos para calcular el resto
+    var fibArr = [0, 1];
+    // tu código aquí
+    for(let i = 1; i<= n; i++) {
+        fibArr.push(fibArr[i-1] + fibArr[i]);
+    }
+    return fibArr;
+}
 
 // CALL
 alwaysHungry([3.14, "comida", "pastel", true, "comida"]);
@@ -71,3 +86,5 @@ var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
 console.log(result); // esperamos 4 de vuelta
 var result = reverse(["a", "b", "c", "d", "e"]);
 console.log(result); // esperamos de vuelta ["e", "d", "c", "b", "a"]
+var result = fibonacciArray(10);
+console.log(result); // esperamos de vuelta[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
