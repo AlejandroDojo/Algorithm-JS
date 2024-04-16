@@ -48,6 +48,17 @@ function betterThanAverage(arr) {
     }
     return count;
 }
+// Escribe una función que invierta los valores de un arreglo y los devuelva.
+
+function reverse(arr) {
+    // tu código aquí
+    let aux = [];
+    for (let i = arr.length -1 ; i>=0; i--) {
+        aux.push(arr[i]);
+    }
+    arr = aux;
+    return arr;
+}
 
 // CALL
 alwaysHungry([3.14, "comida", "pastel", true, "comida"]);
@@ -58,3 +69,5 @@ var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
 console.log(result); // esperamos de vuelta [6, 8, 10, 9]
 var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
 console.log(result); // esperamos 4 de vuelta
+var result = reverse(["a", "b", "c", "d", "e"]);
+console.log(result); // esperamos de vuelta ["e", "d", "c", "b", "a"]
