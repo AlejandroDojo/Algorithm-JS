@@ -14,3 +14,9 @@ var pizzaTradicional = pizzaOven(
     ["mozarrella"],
     ["pepperoni", "salchicha"]
 );
+var pizzaMarinara = pizzaOven(
+    "lanzada a mano",
+    "marinara",
+    ["mozarrella", "feta"],
+    ["champiñones", "aceitunas", "cebollas"]
+);
