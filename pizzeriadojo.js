@@ -20,3 +20,21 @@ var pizzaMarinara = pizzaOven(
     ["mozarrella", "feta"],
     ["champiñones", "aceitunas", "cebollas"]
 );
+var pizzaMexicana = pizzaOven(
+    "lanzada a mano",
+    "mexicana",
+    ["mozarrella"],
+    ["carneMolida", "picante", "cebollas"]
+);
+var pizzaNapolitana = pizzaOven(
+    "estilo Napolitana",
+    "napolitana",
+    ["mozarrella"],
+    ["pepperoni", "tomates", "oregano"]
+);
+var pizzaChocolate = pizzaOven(
+    "lanzada a mano",
+    "dulceChocolate",
+    ["chocolate"],
+    ["fresas", "bananas", "frutos secos"]
+);
